@@ -16,30 +16,32 @@
         <title>Portfolio</title>
     </head>
     <body>
-        <header class="header-wrapper">
+        <header class="header">
             <div class="container">
-                <nav class="nav-wrapper">
+                <nav class="nav">
                     <a class="logo" href="index.html"
-                        >Web<span class="log-dark">Studio</span></a
+                        >Web<span class="logo__studio--dark">Studio</span></a
                     >
-                    <ul class="nav-list">
+                    <ul class="nav__list">
                         <li>
-                            <a class="nav-link" href="index.html">Agencja</a>
+                            <a class="nav__link" href="index.html">Agencja</a>
                         </li>
                         <li>
                             <a
-                                class="nav-link link-current"
                                 href="portfolio.html"
+                                class="nav__link nav__link--active"
                                 >Portfolio</a
                             >
                         </li>
-                        <li><a class="nav-link" href="#">Kontakt</a></li>
+                        <li>
+                            <a href="#" class="nav__link">Kontakt</a>
+                        </li>
                     </ul>
                 </nav>
-                <ul class="header-contact">
+                <ul class="contacts">
                     <li>
                         <a
-                            class="link-contact"
+                            class="contacts__link"
                             href="mailto:info@devstudio.com"
                         >
                             <svg width="16" height="12">
@@ -51,7 +53,7 @@
                         >
                     </li>
                     <li>
-                        <a href="tel:+48111111111" class="link-contact">
+                        <a href="tel:+48111111111" class="contacts__link">
                             <svg width="12" height="16">
                                 <use
                                     href="./images/icons.svg#icon-smartphone-2"
@@ -65,35 +67,45 @@
         </header>
         <main>
             <div class="container">
-                <div class="cards-items">
-                    <ul class="buttons">
+                <div class="projects">
+                    <ul class="projects__btns-list">
                         <li>
-                            <button type="button">Wszystkie</button>
+                            <button type="button" class="projects__btn">
+                                Wszystkie
+                            </button>
                         </li>
                         <li>
-                            <button type="button">Strony</button>
+                            <button type="button" class="projects__btn">
+                                Strony
+                            </button>
                         </li>
                         <li>
-                            <button type="button">Aplikacje</button>
+                            <button type="button" class="projects__btn">
+                                Aplikacje
+                            </button>
                         </li>
                         <li>
-                            <button type="button">Dizajn</button>
+                            <button type="button" class="projects__btn">
+                                Dizajn
+                            </button>
                         </li>
                         <li>
-                            <button type="button">Zamów usługe</button>
+                            <button type="button" class="projects__btn">
+                                Zamów usługe
+                            </button>
                         </li>
                     </ul>
                     <div>
-                        <ul class="cards">
-                            <li class="cards-box">
-                                <div class="images-project">
+                        <ul class="projects__items-list">
+                            <li class="projects__item">
+                                <div class="projects__pictures">
                                     <img
                                         src="images/portfolio.1.jpg"
                                         alt="Zdjęcie przedstawia otwartego laptopa"
                                         width="370"
                                         height="294"
                                     />
-                                    <div class="images-discription">
+                                    <div class="projects__description-hidden">
                                         <p>
                                             Technocrack jest popularną platformą
                                             wykorzystywaną do rozpowszechniania
@@ -104,20 +116,22 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="cards-description">
-                                    <h2>Technocrack</h2>
-                                    <p>Strona internetowa</p>
+                                <div class="projects__description-box">
+                                    <h2 class="projects__title">Technocrack</h2>
+                                    <p class="projects__subtitles">
+                                        Strona internetowa
+                                    </p>
                                 </div>
                             </li>
-                            <li class="cards-box">
-                                <div class="images-project">
+                            <li class="projects__item">
+                                <div class="projects__pictures">
                                     <img
                                         src="images/portfolio.2.jpg"
                                         alt="Zdjęcie przedstawia dwie osoby grające w koszykówkę"
                                         width="370"
                                         height="294"
                                     />
-                                    <div class="images-discription">
+                                    <div class="projects__description-hidden">
                                         <p>
                                             Grafika New Orlean vs Golden Star
                                             jest popularną platformą
@@ -129,20 +143,22 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="cards-description">
-                                    <h2>Grafika New Orlean vs Golden Star</h2>
-                                    <p>Dizajn</p>
+                                <div class="projects__description-box">
+                                    <h2 class="projects__title">
+                                        Grafika New Orlean vs Golden Star
+                                    </h2>
+                                    <p class="projects__subtitles">Dizajn</p>
                                 </div>
                             </li>
-                            <li class="cards-box">
-                                <div class="images-project">
+                            <li class="projects__item">
+                                <div class="projects__pictures">
                                     <img
                                         src="images/portfolio.3.jpg"
                                         alt="Zdjęcie przedstawia dwie osoby grające w koszykówkę"
                                         width="370"
                                         height="294"
                                     />
-                                    <div class="images-discription">
+                                    <div class="projects__description-hidden">
                                         <p>
                                             Restauracja Seafood jest popularną
                                             platformą wykorzystywaną do
@@ -153,20 +169,22 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="cards-description">
-                                    <h2>Restauracja Seafood</h2>
-                                    <p>Aplikacja</p>
+                                <div class="projects__description-box">
+                                    <h2 class="projects__title">
+                                        Restauracja Seafood
+                                    </h2>
+                                    <p class="projects__subtitles">Aplikacja</p>
                                 </div>
                             </li>
-                            <li class="cards-box">
-                                <div class="images-project">
+                            <li class="projects__item">
+                                <div class="projects__pictures">
                                     <img
                                         src="images/portfolio.4.jpg"
                                         alt="Zdjęcie przedstawia dwie osoby grające w koszykówkę"
                                         width="370"
                                         height="294"
                                     />
-                                    <div class="images-discription">
+                                    <div class="projects__description-hidden">
                                         <p>
                                             Projekt Prime jest popularną
                                             platformą wykorzystywaną do
@@ -177,20 +195,24 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="cards-description">
-                                    <h2>Projekt Prime</h2>
-                                    <p>Product Designer</p>
+                                <div class="projects__description-box">
+                                    <h2 class="projects__title">
+                                        Projekt Prime
+                                    </h2>
+                                    <p class="projects__subtitles">
+                                        Product Designer
+                                    </p>
                                 </div>
                             </li>
-                            <li class="cards-box">
-                                <div class="images-project">
+                            <li class="projects__item">
+                                <div class="projects__pictures">
                                     <img
                                         src="images/portfolio.5.jpg"
                                         alt="Zdjęcie przedstawia dwie osoby grające w koszykówkę"
                                         width="370"
                                         height="294"
                                     />
-                                    <div class="images-discription">
+                                    <div class="projects__description-hidden">
                                         <p>
                                             Projekt Boxes jest popularną
                                             platformą wykorzystywaną do
@@ -201,20 +223,22 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="cards-description">
-                                    <h2>Projekt Boxes</h2>
-                                    <p>Aplikacja</p>
+                                <div class="projects__description-box">
+                                    <h2 class="projects__title">
+                                        Projekt Boxes
+                                    </h2>
+                                    <p class="projects__subtitles">Aplikacja</p>
                                 </div>
                             </li>
-                            <li class="cards-box">
-                                <div class="images-project">
+                            <li class="projects__item">
+                                <div class="projects__pictures">
                                     <img
                                         src="images/portfolio.6.jpg"
                                         alt="Zdjęcie przedstawia dwie osoby grające w koszykówkę"
                                         width="370"
                                         height="294"
                                     />
-                                    <div class="images-discription">
+                                    <div class="projects__description-hidden">
                                         <p>
                                             Inspiration has no Borders jest
                                             popularną platformą wykorzystywaną
@@ -225,20 +249,24 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="cards-description">
-                                    <h2>Inspiration has no Borders</h2>
-                                    <p>Strona internetowa</p>
+                                <div class="projects__description-box">
+                                    <h2 class="projects__title">
+                                        Inspiration has no Borders
+                                    </h2>
+                                    <p class="projects__subtitles">
+                                        Strona internetowa
+                                    </p>
                                 </div>
                             </li>
-                            <li class="cards-box">
-                                <div class="images-project">
+                            <li class="projects__item">
+                                <div class="projects__pictures">
                                     <img
                                         src="images/portfolio.7.jpg"
                                         alt="Zdjęcie przedstawia dwie osoby grające w koszykówkę"
                                         width="370"
                                         height="294"
                                     />
-                                    <div class="images-discription">
+                                    <div class="projects__description-hidden">
                                         <p>
                                             Magazyn Limited Edition jest
                                             popularną platformą wykorzystywaną
@@ -249,20 +277,22 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="cards-description">
-                                    <h2>Magazyn Limited Edition</h2>
-                                    <p>Dizajn</p>
+                                <div class="projects__description-box">
+                                    <h2 class="projects__title">
+                                        Magazyn Limited Edition
+                                    </h2>
+                                    <p class="projects__subtitles">Dizajn</p>
                                 </div>
                             </li>
-                            <li class="cards-box">
-                                <div class="images-project">
+                            <li class="projects__item">
+                                <div class="projects__pictures">
                                     <img
                                         src="images/portfolio.8.jpg"
                                         alt="Zdjęcie przedstawia dwie osoby grające w koszykówkę"
                                         width="370"
                                         height="294"
                                     />
-                                    <div class="images-discription">
+                                    <div class="projects__description-hidden">
                                         <p>
                                             Projekt LAB jest popularną platformą
                                             wykorzystywaną do rozpowszechniania
@@ -273,20 +303,20 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="cards-description">
-                                    <h2>Projekt LAB</h2>
-                                    <p>Marketing</p>
+                                <div class="projects__description-box">
+                                    <h2 class="projects__title">Projekt LAB</h2>
+                                    <p class="projects__subtitles">Marketing</p>
                                 </div>
                             </li>
-                            <li class="cards-box">
-                                <div class="images-project">
+                            <li class="projects__item">
+                                <div class="projects__pictures">
                                     <img
                                         src="images/portfolio.9.jpg"
                                         alt="Zdjęcie przedstawia dwie osoby grające w koszykówkę"
                                         width="370"
                                         height="294"
                                     />
-                                    <div class="images-discription">
+                                    <div class="projects__description-hidden">
                                         <p>
                                             Growing Business jest popularną
                                             platformą wykorzystywaną do
@@ -297,9 +327,11 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="cards-description">
-                                    <h2>Growing Business</h2>
-                                    <p>Aplikacja</p>
+                                <div class="projects__description-box">
+                                    <h2 class="projects__title">
+                                        Growing Business
+                                    </h2>
+                                    <p class="projects__subtitles">Aplikacja</p>
                                 </div>
                             </li>
                         </ul>
@@ -309,15 +341,15 @@
         </main>
         <footer class="footer-section">
             <div class="container">
-                <div class="footer-look">
+                <div class="footer-section__wrapper">
                     <a href="#" class="logo" href="index.html"
-                        >Web<span class="log-bright">Studio</span></a
+                        >Web<span class="logo_studio--bright">Studio</span></a
                     >
-                    <address>
-                        <ul>
+                    <address class="footer-section__address">
+                        <ul class="footer-section__list">
                             <li>
                                 <a
-                                    class="adress-style"
+                                    class="footer-section__location"
                                     href="https://goo.gl/maps/EmtP7q1ZZn8QGGQb9"
                                     target="_blank"
                                     >m. Warszawa, Aleje Jerozolimskie 21</a
@@ -325,7 +357,7 @@
                             </li>
                             <li>
                                 <a
-                                    class="mail-class"
+                                    class="footer-section__contacts-link"
                                     href="mailto:info@example.com"
                                     >info@example.com</a
                                 >
@@ -333,7 +365,7 @@
                             <li>
                                 <a
                                     href="#"
-                                    class="link-contact"
+                                    class="footer-section__contacts-link"
                                     href="tel:+48111111111"
                                     >+48 111 111 111</a
                                 >
@@ -341,29 +373,29 @@
                         </ul>
                     </address>
                 </div>
-                <div class="footer-social">
-                    <p>DOŁĄCZ DO NAS</p>
-                    <div>
-                        <a href="#" class="footer-social-svg">
+                <div class="footer-section__social">
+                    <p class="footer-section__social-title">DOŁĄCZ DO NAS</p>
+                    <div class="footer-section__social-container">
+                        <a href="#" class="footer-section__social-icon">
                             <svg width="20" height="20">
                                 <use
                                     href="./images/icons.svg#icon-instagram-2"
                                 />
                             </svg>
                         </a>
-                        <a href="#" class="footer-social-svg">
+                        <a href="#" class="footer-section__social-icon">
                             <svg width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter-1" />
                             </svg>
                         </a>
-                        <a href="#" class="footer-social-svg">
+                        <a href="#" class="footer-section__social-icon">
                             <svg width="20" height="20">
                                 <use
                                     href="./images/icons.svg#icon-facebook-1"
                                 />
                             </svg>
                         </a>
-                        <a href="#" class="footer-social-svg">
+                        <a href="#" class="footer-section__social-icon">
                             <svg width="20" height="20">
                                 <use
                                     href="./images/icons.svg#icon-linkedin-1"
@@ -372,18 +404,21 @@
                         </a>
                     </div>
                 </div>
-                <form class="footer-form">
-                    <label for="email" class="footer-label">
+                <form class="footer-section__form">
+                    <label for="email" class="footer-section__label">
                         Zapisz się do newslettera
                     </label>
-                    <div class="footer-input-look">
+                    <div class="footer-section__newsletter">
                         <input
-                            class="footer-input"
+                            class="footer-section__newsletter-input"
                             type="email"
                             name="email"
                             placeholder="E-mail"
                         />
-                        <button class="button-newsletter" type="submit">
+                        <button
+                            class="footer-section__newsletter-btn"
+                            type="submit"
+                        >
                             <p>Zapisz się</p>
                             <svg width="24" height="24">
                                 <use href="./images/icons.svg#icon-icon-send" />
