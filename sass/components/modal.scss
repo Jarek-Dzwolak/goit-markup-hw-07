@@ -132,4 +132,20 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    .&__checkbox-svg:checked + .&__checkbox-border {
+        border-color: var(--style-color);
+    }
+    .&__checkbox:checked + .&__checkbox-border > .&__checkbox-svg {
+        opacity: 1;
+    }
+    .&__input:focus + svg {
+        fill: var(--style-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .&__input-wrapper > svg {
+        position: absolute;
+        top: 11px;
+        left: 12px;
+    }
 }
