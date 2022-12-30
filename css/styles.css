@@ -499,7 +499,7 @@ ul {
     color: var(--main-bright-color);
     text-decoration: none;
 }
-.logo_studio--bright {
+.logo__studio--bright {
     color: var(--main-bright-color);
 }
 .footer-section__mail {
