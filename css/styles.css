@@ -386,10 +386,10 @@ ul {
 .projects__btns-list {
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
 }
 .projects__btn {
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
@@ -399,7 +399,7 @@ ul {
     border: none;
     padding: 6px 22px;
     border-radius: 4px;
-    margin: 0 5px 30px 5px;
+    margin: 0 5px 50px 5px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
