@@ -30,7 +30,7 @@ p {
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
-    margin: 0;
+    
 }
 .container {
     width: 1200px;

@@ -6,27 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             rel="stylesheet"
-            href="node_modules/modern-normalize/modern-normalize.css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
         />
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/main.min.css" />
         <title>Studio</title>
     </head>
     <body>
         <header class="header">
-            <div class="container">
-                <nav class="nav">
-                    <a href="#" class="logo" href="index.html"
+            <div class="container header__wrapper">
+                <nav class="header__nav">
+                    <a class="logo" href="index.html"
                         >Web<span class="logo__studio--dark">Studio</span></a
                     >
-                    <ul class="nav__list">
+                    <ul class="header__nav-list">
                         <li>
                             <a
-                                href="#"
-                                class="nav__link nav__link--active"
+                                class="header__nav-link header__nav-link--active"
                                 href="index.html"
                                 >Agencja</a
                             >
@@ -34,23 +36,27 @@
                         <li>
                             <a
                                 href="portfolio.html"
-                                class="nav__link"
+                                class="header__nav-link"
                                 href="portfolio.html"
                                 >Portfolio</a
                             >
                         </li>
                         <li>
-                            <a href="#" class="nav__link" href="#">Kontakt</a>
+                            <a class="header__nav-link" href="#">Kontakt</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="contacts">
+                <ul class="header__contacts">
                     <li>
                         <a
-                            class="contacts__link"
+                            class="header__contacts-item"
                             href="mailto:info@devstudio.com"
                         >
-                            <svg width="16" height="12">
+                            <svg
+                                class="header__contacts-item-icon"
+                                width="16"
+                                height="12"
+                            >
                                 <use
                                     href="./images/icons.svg#icon-envelope-4"
                                 />
@@ -59,8 +65,15 @@
                         >
                     </li>
                     <li>
-                        <a href="tel:+48111111111" class="contacts__link">
-                            <svg width="12" height="16">
+                        <a
+                            href="tel:+48111111111"
+                            class="header__contacts-item"
+                        >
+                            <svg
+                                class="header__contacts-item-icon"
+                                width="12"
+                                height="16"
+                            >
                                 <use
                                     href="./images/icons.svg#icon-smartphone-2"
                                 />
@@ -422,17 +435,17 @@
                 </div>
             </section>
         </main>
-        <footer class="footer-section">
-            <div class="container">
-                <div class="footer-section__wrapper">
+        <footer class="footer">
+            <div class="container footer__wrapper">
+                <div class="footer__info">
                     <a href="#" class="logo" href="index.html"
-                        >Web<span class="logo_studio--bright">Studio</span></a
+                        >Web<span class="logo__studio--bright">Studio</span></a
                     >
-                    <address class="footer-section__address">
-                        <ul class="footer-section__list">
+                    <address class="footer__address">
+                        <ul class="footer__list">
                             <li>
                                 <a
-                                    class="footer-section__location"
+                                    class="footer__location"
                                     href="https://goo.gl/maps/EmtP7q1ZZn8QGGQb9"
                                     target="_blank"
                                     >m. Warszawa, Aleje Jerozolimskie 21</a
@@ -440,7 +453,7 @@
                             </li>
                             <li>
                                 <a
-                                    class="footer-section__mail"
+                                    class="footer__contacts-link"
                                     href="mailto:info@example.com"
                                     >info@example.com</a
                                 >
@@ -448,7 +461,7 @@
                             <li>
                                 <a
                                     href="#"
-                                    class="footer-section__contacts-link"
+                                    class="footer__contacts-link"
                                     href="tel:+48111111111"
                                     >+48 111 111 111</a
                                 >
@@ -456,29 +469,29 @@
                         </ul>
                     </address>
                 </div>
-                <div class="footer-section__social">
-                    <p class="footer-section__social-title">DOŁĄCZ DO NAS</p>
-                    <div class="footer-section__social-container">
-                        <a href="#" class="footer-section__social-icon">
+                <div class="footer__social">
+                    <p class="footer__social-title">DOŁĄCZ DO NAS</p>
+                    <div class="footer__social-container">
+                        <a href="#" class="footer__social-icon">
                             <svg width="20" height="20">
                                 <use
                                     href="./images/icons.svg#icon-instagram-2"
                                 />
                             </svg>
                         </a>
-                        <a href="#" class="footer-section__social-icon">
+                        <a href="#" class="footer__social-icon">
                             <svg width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter-1" />
                             </svg>
                         </a>
-                        <a href="#" class="footer-section__social-icon">
+                        <a href="#" class="footer__social-icon">
                             <svg width="20" height="20">
                                 <use
                                     href="./images/icons.svg#icon-facebook-1"
                                 />
                             </svg>
                         </a>
-                        <a href="#" class="footer-section__social-icon">
+                        <a href="#" class="footer__social-icon">
                             <svg width="20" height="20">
                                 <use
                                     href="./images/icons.svg#icon-linkedin-1"
@@ -487,21 +500,18 @@
                         </a>
                     </div>
                 </div>
-                <form class="footer-section__form">
-                    <label for="email" class="footer-section__label">
+                <form class="footer__form">
+                    <label for="email" class="footer__label">
                         Zapisz się do newslettera
                     </label>
-                    <div class="footer-section__newsletter">
+                    <div class="footer__newsletter">
                         <input
-                            class="footer-section__newsletter-input"
+                            class="footer__newsletter-input"
                             type="email"
                             name="email"
                             placeholder="E-mail"
                         />
-                        <button
-                            class="footer-section__newsletter-btn"
-                            type="submit"
-                        >
+                        <button class="footer__newsletter-btn" type="submit">
                             <p>Zapisz się</p>
                             <svg width="24" height="24">
                                 <use href="./images/icons.svg#icon-icon-send" />

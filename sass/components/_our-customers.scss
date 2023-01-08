@@ -3,7 +3,7 @@
     fill: #afb1b8;
     justify-content: center;
     gap: 30px;
-    fill: var(--text-color);
+    fill: $light-gray;
     &__logo {
         display: flex;
         justify-content: center;
@@ -13,13 +13,13 @@
         border-radius: 5px;
         width: 170px;
         height: 92px;
-        fill: var(--text-color);
+        fill: $light-gray;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__logo:hover,
     &__logo:focus {
-        fill: var(--style-color);
-        border-color: var(--style-color);
+        fill: $primary-color;
+        border-color: $primary-color;
     }
 }

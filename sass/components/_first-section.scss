@@ -1,5 +1,5 @@
 .first-section {
-    background-color: var(--second-background-color);
+    background-color: $dark-bg;
     padding-top: 200px;
     padding-bottom: 200px;
     display: flex;
@@ -16,7 +16,7 @@
     background-position: center center;
     fill-opacity: 0.6;
     margin: 0 auto;
-    color: var(--main-bright-color);
+    color: $white;
     text-align: center;
     &__title {
         margin: 0 auto;
@@ -36,8 +36,8 @@
         height: 50px;
         border-radius: 5px;
         border: 0px;
-        background-color: var(--style-color);
-        color: var(--main-bright-color);
+        background-color: $primary-color;
+        color: $white;
         margin-top: 30px;
         cursor: pointer;
         font-weight: 700;
@@ -52,6 +52,6 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: var(--main-color);
+    color: $dark-gray;
     padding-bottom: 50px;
 }

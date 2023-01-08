@@ -2,13 +2,13 @@
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    color: var(--style-color);
+    color: $primary-color;
     margin-right: 93px;
     text-decoration: none;
     &__studio--dark {
-        color: #000000;
+        color: $black;
     }
     &__studio--bright {
-        color: var(--main-bright-color);
+        color: $white;
     }
 }

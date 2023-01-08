@@ -1,7 +1,10 @@
-.footer-section {
-    background-color: var(--second-background-color);
+.footer {
+    background-color: $dark-bg;
     padding: 60px 0;
     &__wrapper {
+        display: flex;
+    }
+    &__info {
         display: flex;
         flex-direction: column;
     }
@@ -18,12 +21,12 @@
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
-        color: var(--main-bright-color);
+        color: $white;
         text-decoration: none;
     }
     &__mail {
         font-size: 14px;
-        color: var(--text-color);
+        color: $light-gray;
         text-decoration: underline;
         font-weight: 500;
         line-height: 1.7;
@@ -31,7 +34,7 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__contacts-link {
-        color: var(--text-color);
+        color: $light-gray;
         font-weight: 500;
         cursor: pointer;
         font-size: 14px;
@@ -46,11 +49,11 @@
     &__contacts-link:hover,
     &__contacts-link:focus,
     &__contacts-link:active {
-        color: var(--style-color);
+        color: $primary-color;
     }
     &__mail:hover,
     &__mail:focus {
-        color: var(--style-color);
+        color: $primary-color;
     }
     &__social {
         margin-left: 70px;
@@ -67,7 +70,7 @@
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 20px;
-        color: var(--main-bright-color);
+        color: $white;
     }
     &__social-icon {
         display: flex;
@@ -75,7 +78,7 @@
         align-items: center;
         width: 44px;
         height: 44px;
-        fill: var(--main-bright-color);
+        fill: $white;
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.1);
         transition-duration: 250ms;
@@ -83,7 +86,7 @@
     }
     &__social-icon:hover,
     &__social-icon:focus {
-        background: var(--style-color);
+        background: $primary-color;
     }
     &__form {
         margin-left: 78px;
@@ -93,7 +96,7 @@
     &__label {
         display: flex;
         padding-bottom: 20px;
-        color: var(--main-bright-color);
+        color: $white;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.3;
@@ -106,16 +109,16 @@
         padding-right: 8px;
         align-items: center;
         gap: 24px;
-        fill: var(--main-bright-color);
+        fill: $white;
 
         width: 200px;
         height: 50px;
         border: 0px;
         margin-left: 12px;
-        background: var(--style-color);
+        background: $primary-color;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
-        color: var(--main-bright-color);
+        color: $white;
         font-family: Roboto;
         font-size: 16px;
         font-weight: 700;
@@ -129,9 +132,9 @@
         line-height: 1.25;
         letter-spacing: 0.03em;
         text-align: left;
-        color: var(--main-bright-color);
+        color: $white;
         border: 1px solid #ffffff4d;
-        background: var(--second-background-color);
+        background: $dark-bg;
         border-radius: 4px;
         padding: 15px 140px 15px 16px;
         outline: none;
