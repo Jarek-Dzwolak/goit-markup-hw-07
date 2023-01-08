@@ -52,3 +52,14 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.section {
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $dark-gray;
+        padding-bottom: 50px;
+    }
+}
